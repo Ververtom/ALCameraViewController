@@ -600,10 +600,6 @@ open class CameraViewController: UIViewController {
             }
 
             guard let image = image, let asset = asset else {
-                
-                if #available(iOS 13.0, *) {
-                    self?.cameraView.startSession()
-                }
                 return
             }
 
